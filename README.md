@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/media/hero.svg" alt="LiftGenius — showcase of the mobile CRM for personal trainers" width="100%">
+<img src="docs/media/hero.svg" alt="LiftGenius showcase — the trainer CRM on iOS and Android side by side" width="100%">
 
 <p>
   <img alt="iOS" src="https://img.shields.io/badge/iOS%2026-SwiftUI-ff8a3d?style=for-the-badge&labelColor=08060a">
@@ -52,6 +52,36 @@ Everything is bilingual (TR / EN), syncs through Supabase and keeps an on-device
 
 <img src="docs/media/divider.svg" width="100%" alt="">
 
+## Two native apps, one backend
+
+| | iOS | Android |
+|---|---|---|
+| **UI** | SwiftUI with a Liquid Glass design system | Jetpack Compose · Material 3 |
+| **Architecture** | Services over Supabase with an on-device cache | MVVM, repositories, Hilt, Coroutines + Flow |
+| **Live session** | Live Activity in the Dynamic Island and on the Lock Screen | Ongoing notification |
+| **Widgets** | *Today's Sessions* · *Weekly Pulse* | Home-screen widget |
+| **Sign-in** | Email, Google, Apple | Email, Google (Credential Manager) |
+| **Reports** | A4 PDF templates through the share sheet | Canvas-drawn PDF export |
+| **AI plans** | Gemini | Gemini |
+| **Languages** | Turkish and English | Turkish and English |
+
+Both apps share one Supabase project with row-level security, and the same models, so a trainer can switch devices without exporting anything. Deleting an account removes the user's own data on both platforms through one database function.
+
+<img src="docs/media/divider.svg" width="100%" alt="">
+
+## The screens above
+
+| Screen | Shows |
+|---|---|
+| Dashboard | Greeting, monthly revenue, active clients, today's sessions, expiring packages, overdue payments |
+| Clients | The roster with status and package state |
+| Client detail | Goals, measurements, progress and personal records |
+| Calendar | The month grid and the day's sessions |
+| Profile | The trainer, the salon and settings |
+| Upgrade | What Pro adds |
+
+<img src="docs/media/divider.svg" width="100%" alt="">
+
 ## Türkçe özet
 
 **LiftGenius**, kişisel antrenörler ve spor salonu sahipleri için koyu, cam efektli bir tasarımla hazırlanmış mobil CRM uygulaması. Müşteriler, paketler, seanslar, yapay zekâ ile antrenman ve beslenme planları ve nakit akışı tek ekranda. Bu depo uygulamanın vitrinidir: ekran görüntüleri ve özellikler burada, kaynak kod gizli tutuluyor.
@@ -59,5 +89,5 @@ Everything is bilingual (TR / EN), syncs through Supabase and keeps an on-device
 <div align="center">
 <br>
 <a href="https://github.com/kutluhangil"><img src="docs/media/signature.svg" width="100%" alt="Built by kutluhangil"></a>
-<sub>Showcase only · native iOS (SwiftUI) and Android (Kotlin) apps on a shared Supabase backend.</sub>
+<sub>Showcase only · native iOS (SwiftUI) and Android (Kotlin) apps on a shared Supabase backend · figures in the banner are examples.</sub>
 </div>
